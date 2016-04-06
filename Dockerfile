@@ -33,7 +33,7 @@ RUN cp php.ini /etc/php5/cli/php.ini
 RUN cp php.ini /etc/php5/apache2/php.ini
 
 # Whatsapp dependencies
-ADD ./docker/start.sh /tmp/start.sh
+ADD ./start.sh /tmp/start.sh
 RUN chmod +x /tmp/start.sh
 RUN /tmp/start.sh
 RUN apt-get install -y ffmpeg
